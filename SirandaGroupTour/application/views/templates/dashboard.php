@@ -88,10 +88,16 @@
               <p>Clientes</p>
             </a>
           </li>
-          <li>
-            <a href="#">
+          <li class="<?php if(isset($ticket)):?> <?=$ticket?> <?php endif?>">
+            <a href="<?=base_url();?>index.php/Ticket">
               <i class="now-ui-icons ui-1_bell-53"></i>
               <p>Tickets</p>
+            </a>
+          </li>
+           <li class="<?php if(isset($transporte)):?> <?=$transporte?> <?php endif?>">
+            <a href="<?=base_url();?>index.php/Transporte">
+              <i class="now-ui-icons design_bullet-list-67"></i>
+              <p>Transportes</p>
             </a>
           </li>
           <li>
@@ -100,12 +106,7 @@
               <p>User Profile</p>
             </a>
           </li>
-          <li>
-            <a href="#">
-              <i class="now-ui-icons design_bullet-list-67"></i>
-              <p>Usuarios</p>
-            </a>
-          </li>
+         
           <li>
             <a href="#">
               <i class="now-ui-icons text_caps-small"></i>
@@ -221,6 +222,8 @@
         <script src="<?=base_url();?>assets1/assets/js/show_user.js"></script>
         <script src="<?=base_url();?>assets1/assets/js/clientes.js"></script>
         <script src="<?=base_url();?>assets1/assets/js/destino.js"></script>
+        <script src="<?=base_url();?>assets1/assets/js/transporte.js"></script>
+        <script src="<?=base_url();?>assets1/assets/js/ticket.js"></script>
         <script src="<?=base_url();?>assets1/assets/js/core/jquery.min.js"></script>
         <script src="<?=base_url();?>assets1/assets/js/core/popper.min.js"></script>
         <script src="<?=base_url();?>assets1/assets/js/core/bootstrap.min.js"></script>
